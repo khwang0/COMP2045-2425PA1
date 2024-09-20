@@ -1,3 +1,0 @@
-obfuscatedCode are downloaded online from some github repo.
-
-https://github.com/TheAlgorithms/Java
