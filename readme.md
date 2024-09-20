@@ -1,17 +1,17 @@
 ![](hkbu.png)
-# COMP2026/COMP2045 Programming Assignment 1 - Sokoban 
+# COMP2026/COMP2045 Programming Assignment 1 - Block Puzzle Game 
 
 ## 2023-24 Semester 1
 
 * Designed by: [Dr. Kevin Wang](mailto:kevinw@comp.hkbu.edu.hk)
 * Q & A: [Discord](https://discordapp.com/channels/1004554070083776672/1004554070083776678)
-* Assignment Website: [GitHub](https://github.com/khwang0/COMP2045-2324PA1)
+* Assignment Website: [GitHub](https://github.com/khwang0/COMP2045-2425PA1)
 * Due: 
-  * UAT Due: 23:59pm 2/10/2023 (Monday midnight)
-  * Programming Due: 23:59pm 19/10/2023 (Thursday midnight)
-* Download the starter code: [Sokoban](Sokoban.java) 
+  * UAT Due: 23:59pm 2/10/2024 (Wednesday midnight)
+  * Programming Due: 23:59pm 10/10/2024 (Thursday midnight)
+* Download the starter code: [BlockPuzzle](BlockPuzzle.java) 
 * Download the demo program: [here](demo.jar)
-* Download everything from the assignment: [here](https://github.com/khwang0/COMP2045-2324PA1/archive/refs/heads/master.zip)
+* Download everything from the assignment: [here](https://github.com/khwang0/COMP2045-2425PA1/archive/refs/heads/master.zip)
 
 > To run the demo program, type the following in your terminal:
 > 
@@ -19,7 +19,7 @@
 > > java -jar demo.jar
 > ```
 
-![](Sokoban_ani.gif)
+![](blockypuzzle.png)
 
 <sub><sup>
 
@@ -34,17 +34,20 @@ Students are expected to have some practice on arrays/2D arrays/parameter passin
 
 # Introduction
 
-You are going to complete the Sokoban program! Open [Sokoban.java](Sokoban.java) and complete the methods stated in the skeleton code. Some of these methods are very straightforward while some of them ain't that easy. Make sure you can follow the instructions given at the top of each method.
+You are going to complete the Block Puzzle program! Open [BlockPuzzle.java](BlockPuzzle.java) and complete the methods stated in the skeleton code. Some of these methods are very straightforward while some of them ain't that easy. Make sure you can follow the instructions given at the top of each method.
 
-A [sample program](demo.jar) is given to you. When there is something you are not sure, you can take a look at the sample program to decide what to do. There is [another sample programe](demo_without_fixmap.jar) that would support you to deduce the function of the method `fixmap`.
+A [sample program](demo.jar) is given to you. When there is something you are not sure, you can take a look at the sample program to decide what to do. 
 
-Some methods are labeled as completed or given. Please don't make any change on those methods. You are not supposed to modify them. **You can add your own method if you want to**.
+Some methods are labeled as completed or given. Please don't make any change on those methods. You are not supposed to modify them. **You can add your own method if you want to**. However, you are not allowed to introduce any class variable (field) or additional class. Whenever possible, please refer the constant variables (`PUZZLES`, `ROW`, `COL`, `ROUND`, `SCORES`) defined in the program.
 
-## Explanation of the game Sokoban
+## Explanation of the game Block Puzzle
 
+> Try the game here: https://poki.com/zh/g/blocky-puzzle#utm_source=redirect-en-zh (select classic mode) 
 
+You can skip this section if you have some experience in playing the game. Three random puzzles will be generated for you. You will need to place all of them onto a board (a 8x9-map in our case). You cannot rotate the puzzle and puzzle cannot be placed out-of-bound or placed on top of another puzzle. When three puzzles are placed, another three puzzles will be generated. When a row or a column is filled, the row or column will be cleared and you will get some scores. The game ends when you cannot place any puzzle on the board.
 
-You can skip this section if you have some experience in playing the game Sokoban. It is a role play game where a player tries to push boxes to the target locations. The player can only push the box but not pull it. The player can only push one box at a time. The player can only move to an empty space or a target location. The player cannot move to a wall or a box. The player wins the game when all target locations have a box on it. The player loses the game when he/she is stuck and cannot move any more.
+The links above are for your reference only. The scoring and the types of puzzles and even the size of the board are different from the one you are going to implement.
+
 
 ## Explanation about the assignment
 
@@ -85,15 +88,15 @@ Submit your answers on Moodle.
 
 1. Which method is responsible to print the game board?
 2. Which method is responsible to decide if the game ends?
-3. Can a player push two boxes at a time?
-4. What key should I press if I decide to restart the game?
-5. What does the method `fixmap` do?
+3. What score should I get if I clear two rows and one column at the same time?
+4. How many different types of puzzles are there in the program?
+5. What should I type to the computer if I want to place a puzzle at row 3, column 4?
 
 ---
 
 
 # Submission 
-For submission upload the file `Sokoban.java` to Moodle.  
+For submission upload the file `BlockPuzzle.java` to Moodle.  
 
 Please be reminded that both the **Late Penalty Rule** and the **Penalty for Plagiarism** are applied strictly to all submissions of this course (including this assignment).   
 
@@ -131,13 +134,13 @@ if (lateHour > 0) {
 > may fail your assignment.
 
 ## Marking Scheme 
-This assignment is worth 14% of the course mark (7% for COMP2026).  There are three elements in the marking scheme: 
+This assignment is worth 14% of the course mark.  There are three elements in the marking scheme: 
 * 5% - Understanding the Assignment Test (UAT)
 * 10% - the program can be compiled without any error
 * 85% - a working program that functions as specified 
 * -50% - if you define any class variable (field), addition class, or change the method `main`.
 * -30% - if you use any advanced data structure such as `java.util.List`, `java.util.ArrayList`, `java.util.Arrays`, `java.util.Set`, `java.util.Map` etc to replace your primitive array.
-* -10% - Unable to fill adequate comments, e.g. the `runApp` method. 
+
 
 Please note that submitting a program that cannot be compiled would result in a very low mark. 
 
