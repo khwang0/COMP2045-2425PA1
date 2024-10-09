@@ -1,14 +1,14 @@
 ![](hkbu.png)
 # COMP2026/COMP2045 Programming Assignment 1 - Block Puzzle Game 
 
-## 2023-24 Semester 1
+## 2024-25 Semester 1
 
 * Designed by: [Dr. Kevin Wang](mailto:kevinw@comp.hkbu.edu.hk)
 * Q & A: [Discord](https://discordapp.com/channels/1004554070083776672/1004554070083776678)
 * Assignment Website: [GitHub](https://github.com/khwang0/COMP2045-2425PA1)
 * Due: 
   * UAT Due: 23:59pm 2/10/2024 (Wednesday midnight)
-  * Programming Due: 23:59pm 10/10/2024 (Thursday midnight)
+  * Programming Due: 23:59pm 13/10/2024 (Sunday midnight)
 * Download the starter code: [BlockPuzzle](BlockPuzzle.java) 
 * Download the demo program: [here](demo.jar)
 * Download everything from the assignment: [here](https://github.com/khwang0/COMP2045-2425PA1/archive/refs/heads/master.zip)
